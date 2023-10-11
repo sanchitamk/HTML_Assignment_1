@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon" />
+    <meta name="immnewsnetwork-Contact Us" content="Get in touch with us"/>
+
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <p>
+          <img width="25" src="Images/logo.png" alt="Logo"/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="Home.html">Home</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="Contact.html">Contact Us</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="About.html">About Us</a>
+        </p>
+      </nav>
+  </header>
+
+    <form action="process-contact.php" method="POST">
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="firstName">First Name: </label>
+        <input name="firstName" required/>
+
+        <label for="lastName">Last Name: </label>
+        <input name="lastName" required/>
+
+        <label for="lastName">E-mail: </label>
+        <input type="email" required placeholder="john.doe@apple.com"/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Category Interests</legend>
+        <input type="checkbox" name="industry"/>Industry
+        <input type="checkbox" name="technical"/>Technical
+        <input type="checkbox" name="career"/>Career
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Role</legend>
+        <input type="radio" name="role"/>Writer
+        <input type="radio" name="role"/>Contributor
+        <input type="radio" name="role"/>Administrator
+      </fieldset>
+
+      <input type="submit"/>
+    </form>
+  </body>
+</html>
